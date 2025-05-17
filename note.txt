@@ -1,0 +1,4 @@
+所有要知道的内容都在
+https://chatgpt.com/c/68209758-2330-8011-b73d-d7384beaf59a
+
+另外，需要.env安装Google API 
