@@ -1,0 +1,15 @@
+[project]
+name = "a2a-samples-image-gen-zh"
+version = "0.1.0"
+description = "使用A2A和CrewAI生成或修改图像"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "crewai[tools]>=0.95.0",
+    "google-genai>=1.9.0",
+    "a2a-samples",
+    "python-dotenv>=1.0.0",
+]
+
+[tool.uv.sources]
+a2a-samples = { workspace = true }
