@@ -25,10 +25,12 @@ members = [
     "agents/crewai_zh",
     "agents/google_adk",
     "agents/langgraph",
+    "agents/langgraph_zh",
     "agents/marvin",
     "hosts/cli",
     "hosts/multiagent",
     "agents/llama_index_file_chat",
+    "agents/llama_index_file_chat_zh",
     "agents/semantickernel",
     "agents/mindsdb",
     "agents/ag2"

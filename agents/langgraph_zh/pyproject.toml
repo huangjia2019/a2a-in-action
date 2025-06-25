@@ -1,5 +1,5 @@
 [project]
-name = "a2a-sample-agent-langgraph"
+name = "a2a-sample-agent-langgraph-zh"
 version = "0.1.0"
 description = "Sample LangGraph currency agent with A2A Protocol"
 readme = "README.md"
