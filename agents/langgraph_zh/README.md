@@ -2,6 +2,81 @@
 
 此示例演示了一个使用[LangGraph](https://langchain-ai.github.io/langgraph/)构建并通过A2A协议暴露的货币转换Agent。它展示了支持多轮对话和流式响应的对话交互。
 
+## 文件结构
+
+```
+langgraph_zh/
+├── 01_LangGraph_Simple.py          # 极简LangGraph Agent示例
+├── 02_LangGraph_Currency_Agent.py  # 汇率兑换Agent单机版
+├── 03_Test_LangGraph_Agent.py      # 测试套件
+├── generate_flowchart.py           # 生成工作流流程图
+├── agent.py                        # 原始A2A协议Agent
+├── task_manager.py                 # 任务管理器
+├── __main__.py                     # 主入口文件
+└── README.md                       # 说明文档
+```
+
+## 快速开始
+
+### 1. 极简LangGraph Agent示例
+
+运行极简示例来了解LangGraph的基本用法：
+
+```bash
+cd agents/langgraph_zh
+python 01_LangGraph_Simple.py
+```
+
+这个示例展示了：
+- 基本的LangGraph工作流创建
+- 状态管理
+- 简单的Agent节点实现
+
+### 2. 汇率兑换Agent单机版
+
+运行汇率兑换Agent演示：
+
+```bash
+python 02_LangGraph_Currency_Agent.py
+```
+
+这个示例展示了：
+- 多节点工作流设计
+- 工具集成（汇率API）
+- 错误处理和状态管理
+- 会话管理
+
+### 3. 运行测试套件
+
+执行完整的测试：
+
+```bash
+python 03_Test_LangGraph_Agent.py
+```
+
+### 4. 生成流程图
+
+生成工作流可视化图表：
+
+```bash
+python generate_flowchart.py
+```
+
+需要安装graphviz：
+```bash
+pip install graphviz
+```
+
+## 与CrewAI的对比
+
+| 特性 | CrewAI | LangGraph |
+|------|--------|-----------|
+| 工作流模型 | Agent-Task-Crew | State-Node-Edge |
+| 状态管理 | 隐式 | 显式状态图 |
+| 流程控制 | 顺序执行 | 灵活的条件分支 |
+| 复杂度 | 简单直观 | 更灵活但复杂 |
+| 适用场景 | 协作任务 | 复杂工作流 |
+
 ## 工作原理
 
 此Agent使用LangGraph和Google Gemini通过ReAct Agent模式提供货币汇率信息。A2A协议实现了与Agent的标准化交互，允许客户端发送请求并接收实时更新。

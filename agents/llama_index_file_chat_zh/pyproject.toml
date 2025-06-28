@@ -1,5 +1,5 @@
 [project]
-name = "a2a-samples-file-chat"
+name = "a2a-samples-file-chat-zh"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
@@ -9,6 +9,7 @@ dependencies = [
     "llama-cloud-services>=0.6.12",
     "llama-index-core>=0.12.30",
     "llama-index-llms-google-genai>=0.1.7",
+    "llama-index-embeddings-huggingface"
 ]
 
 [tool.uv.sources]
