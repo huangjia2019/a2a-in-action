@@ -1,0 +1,29 @@
+[project]
+name = "autocityintro"
+version = "0.1.0"
+description = "AutoCityIntro 智能城市助手"
+requires-python = ">=3.8"
+dependencies = [
+    "fastapi>=0.95.0",
+    "uvicorn>=0.22.0",
+    "python-dotenv>=1.0.0",
+    "requests>=2.28.2",
+    "pydantic>=2.0.0",
+    "python-multipart>=0.0.6",
+    "openai>=1.0.0",
+    "python-a2a>=0.1.0",
+    "jupyter>=1.0.0",
+    "notebook>=6.5.4"
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff>=0.11.2"
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build" 
+
+[tool.hatch.build.targets.wheel]
+include = ["*.py"] 

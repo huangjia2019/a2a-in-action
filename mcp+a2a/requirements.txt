@@ -1,0 +1,17 @@
+# 基础依赖
+fastapi>=0.95.0
+uvicorn>=0.22.0
+python-dotenv>=1.0.0
+requests>=2.28.2
+pydantic>=2.0.0
+python-multipart>=0.0.6
+
+# OpenAI API
+openai>=1.0.0
+
+# A2A框架
+python-a2a>=0.1.0
+
+# 其他工具
+jupyter>=1.0.0
+notebook>=6.5.4
