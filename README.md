@@ -1,3 +1,13 @@
+# 极客时间专栏学习之旅
+
+[👉 点击进入专栏介绍页](https://time.geekbang.org/column/intro/101053801)
+
+---
+
+本专栏自上线两周以来，已有近3000位同学加入学习之旅。欢迎你一同开启知识探索之门！
+
+![极客时间](pics/极客时间.png)
+
 # Sample Code
 
 This code is used to demonstrate A2A capabilities as the spec progresses.\ Samples are divided into 3 sub directories:
